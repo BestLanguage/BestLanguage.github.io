@@ -3,13 +3,18 @@
     <head>
         <meta charset="UTF-8">
         <script type="text/javascript">
-            if (Math.random() < 0.9)
+            let random_value = Math.random();
+            if (random_value < 0.1)
             {
-                window.location = "https://php.net/";
+                window.location = "https://www.python.org/";
+            }
+            else if(random_value < 0.5)
+            {
+                window.location = "https://www.rust-lang.org";
             }
             else
             {
-                window.location = "https://www.python.org/";
+                window.location = "https://www.php.net";
             }
         </script>
         <title>Page Redirection</title>
